@@ -1,0 +1,19 @@
+admin - Makes the user admin in the bot and groups.
+unadmin - Demotes the user from admin list.
+leave - Make the bot to leave the group cleanly.
+hidegroup - Revoke invite link and hide the group from groups` list.
+showgroup - Make the group accessible via groups` list.
+warn - Warns the user.
+unwarn -Removes the last warn from the user.
+nowarns - Clears warns for the user.
+ban - Bans the user from groups.
+unban - Removes the user from ban list.
+user - Shows the status of the user.
+addcommand - Create a custom command.
+removecommand - Remove a custom command.
+staff - Shows a list of admins.
+link - Shows the current group's link.
+groups - Shows a list of groups which the bot is admin in.
+report - Reports the replied-to message to admins.
+commands - Shows a list of available commands.
+help - start How to use the bot.
