@@ -1,3 +1,5 @@
+Bot father commands :
+
 admin - Makes the user admin in the bot and groups.
 unadmin - Demotes the user from admin list.
 leave - Make the bot to leave the group cleanly.
