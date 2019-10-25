@@ -6,10 +6,11 @@ The Magiq Bot is a Telegram bot made to help admins manage their groups.
 
 He is created to moderate [LetsMakeMagiq](https://t.me/LetsMakeMAGIQ).
 
+Based on [The Guard Bot](https://github.com/TheDevs-Network/the-guard-bot).
+
 **NOTE: The Magiq Bot is in beta phase;**
 **it has known issues, but it's successfully being used in production**
 
-If you need help with using the Bot or setting it up, join our [Support Chat](https://t.me/theguardsupport).
 
 ## Setup
 You need [Node.js](https://nodejs.org/) (>= 12) to run this bot.
@@ -73,5 +74,3 @@ If used by reply, `/ban` and `/warn` would remove the replied-to message.
 ---
 
 > Important Note: Under the AGPL-3.0 license, if you're running your own instance, you should add a link to the source [(this repository)](https://github.com/stephdgenius/TheMagiq_Bot) in your bot's bio. If you're modifying this source and making your own bot, you should link to the source of your own version of the bot according to the AGPL-3.0 license. Check [LICENSE](LICENSE) for more info.
-
-`The Guard` icon is from [Entypo+](http://entypo.com/) by Daniel Bruce.
