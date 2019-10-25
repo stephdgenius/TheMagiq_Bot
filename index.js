@@ -6,17 +6,20 @@ process.chdir(__dirname);
 const { logError } = require('./utils/log');
 
 /**
- * @type {Telegraf}
+ * @type {Telegraf}s
  * Bot
  */
 const bot = require('./bot');
 
-bot.telegram.getMe().then((botInfo) => {
-	bot.options.username = botInfo.username;
-	bot.context.botInfo = botInfo;
-}).then(() => {
-	bot.startPolling();
-});
+bot.telegram
+	.getMe()
+	.then(botInfo => {
+		bot.options.username = botInfo.username;
+		bot.context.botInfo = botInfo;
+	})
+	.then(() => {
+		bot.startPolling();
+	});
 
 bot.use(
 	require('./handlers/middlewares'),
@@ -24,8 +27,18 @@ bot.use(
 	require('./plugins'),
 	require('./handlers/commands'),
 	require('./handlers/regex'),
-	require('./handlers/unmatched'),
+	require('./handlers/unmatched')
 );
 
-
 bot.catch(logError);
+
+const express = require('express');
+const app = express();
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+	res.send('The Magiq Bot');
+});
+
+app.listen(80);

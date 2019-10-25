@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="350" viewBox="0 0 700 350">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="shape" d="M197.75-146.768a9.412,9.412,0,0,0-1.655-4.524,7.924,7.924,0,0,0-3.642-2.979l-75.039-37.74a8.509,8.509,0,0,0-4.193-1.1,8.509,8.509,0,0,0-4.193,1.1l-75.48,37.52a8.992,8.992,0,0,0-3.531,3.09,11.62,11.62,0,0,0-1.766,4.193q0,.441-.221,15.449-.221,15.229,6.29,36.968T57.6-48.775Q74.6-24.5,108.807-5.738q1.1.441,2.207.772a7.646,7.646,0,0,0,2.207.331,8.423,8.423,0,0,0,2.428-.331,9.731,9.731,0,0,0,2.207-.993Q150.74-24.5,167.293-48.334q16.773-23.836,23.5-45.244t6.952-36.637ZM113.221-24.939Q88.943-39.064,75.48-56.5,61.8-73.715,55.4-90.047t-7.725-29.795a168.34,168.34,0,0,1-1.1-20.084l66.652-33.105,65.99,33.105a175.33,175.33,0,0,1-1.766,20.084q-1.545,13.463-8.166,29.905T149.416-56.279Q136.174-39.064,113.221-24.939Z" transform="translate(130 274)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8125e"/>
+      <stop offset="1" stop-color="#113198"/>
+    </linearGradient>
+    <clipPath id="clip-MV_BOT_-_Banner">
+      <rect width="700" height="350"/>
+    </clipPath>
+  </defs>
+  <g id="MV_BOT_-_Banner" data-name="MV BOT - Banner" clip-path="url(#clip-MV_BOT_-_Banner)">
+    <g id="Icon" clip-path="url(#clip-path)">
+      <rect id="color" width="188" height="188" transform="translate(148 81)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Text" transform="translate(25 1)">
+      <text id="BOT" transform="translate(329 240)" fill="#fff" font-size="114" font-family="GoboldItalic-Italic, Gobold Italic" font-style="italic"><tspan x="0" y="0">BOT</tspan></text>
+      <text id="THE_MAGIQ" data-name="THE MAGIQ" transform="translate(355 114)" fill="#fff" font-size="38" font-family="GoboldItalic-Italic, Gobold Italic" font-style="italic"><tspan x="0" y="0">THE MAGIQ</tspan></text>
+      <text id="v1.0.0" transform="translate(333 273)" fill="#fff" font-size="18" font-family="GoboldItalic-Italic, Gobold Italic" font-style="italic"><tspan x="0" y="0">v1.0.0</tspan></text>
+    </g>
+  </g>
+</svg>
