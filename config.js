@@ -23,7 +23,7 @@ module.exports = {
 	 * the person who can promote and demote admins,
 	 * and add the bot to groups.
 	 */
-	master: process.env.BOT_MASTER,
+	master: 123456789,
 
 	/**
 	 * @type {!string}
@@ -38,14 +38,14 @@ module.exports = {
 		 * Chat to send member join/leave notifications to.
 		 * Pass false to disable this feature.
 		 */
-		presenceLog: process.env.BOT_CHAT_PRESENCELOG,
+		presenceLog: false,
 
 		/**
 		 * @type {(number | false)}
 		 * Chat to send report notifications to.
 		 * Pass false to disable this feature.
 		 */
-		report: process.env.BOT_CHAT_REPORT
+		report: -1001148607297
 	},
 
 	/**
@@ -53,11 +53,11 @@ module.exports = {
 	 * Which messages with commands should be deleted?
 	 * Defaults to 'own' -- don't delete commands meant for other bots.
 	 */
-	deleteCommands: process.env.BOT_DELETECOMMAND,
+	deleteCommands: 'own',
 
 	deleteCustom: {
-		longerThan: process.env.BOT_DELETECUSTOM_LONGERTHAN, // utf16 characters
-		after: process.env.BOT_DELETECUSTOM_AFTER
+		longerThan: 450, // utf16 characters
+		after: '20 minutes'
 	},
 
 	/**
@@ -66,7 +66,7 @@ module.exports = {
 	 * [Look at typedef above for details.]
 	 * Pass false to disable this feature.
 	 */
-	deleteJoinsAfter: process.env.BOT_DELETEJOINSAFTER,
+	deleteJoinsAfter: '2 minutes',
 
 	/**
 	 * @type {(ms | { auto: (ms | false), manual: (ms | false) } | false)}
@@ -76,7 +76,7 @@ module.exports = {
 	 * over which messages get deleted
 	 * Pass false to disable this feature.
 	 */
-	deleteWarnsAfter: process.env.BOT_DELETEWARNSAFTER,
+	deleteWarnsAfter: false,
 
 	/**
 	 * @type {(ms | false)}
@@ -84,7 +84,7 @@ module.exports = {
 	 * [Look at typedef above for details.]
 	 * Pass false to disable this feature.
 	 */
-	deleteBansAfter: process.env.BOT_DELETEBANSAFTER,
+	deleteBansAfter: false,
 
 	/**
 	 * @type {string[]}
@@ -108,7 +108,7 @@ module.exports = {
 	 * Don't count warns older than this value towards automatic ban.
 	 * [Look at typedef above for details.]
 	 */
-	expireWarnsAfter: process.env.BOT_EXPIREWARNSAFTER,
+	expireWarnsAfter: Infinity,
 
 	/**
 	 * @type {InlineKeyboardMarkup}
@@ -117,7 +117,7 @@ module.exports = {
 	 */
 	groupsInlineKeyboard: [],
 
-	numberOfWarnsToBan: process.env.BOT_NUMBEROFWARNSTOBAN,
+	numberOfWarnsToBan: 3,
 
 	/**
 	 * @type {string[]}
