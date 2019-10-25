@@ -101,7 +101,7 @@ module.exports = {
 	 * For channels and groups to stop warning users for them.
 	 * Pass false to disable this feature
 	 */
-	excludeLinks: process.env.BOT_EXCLUDELINKS,
+	excludeLinks: [],
 
 	/**
 	 * @type {ms}
@@ -115,7 +115,7 @@ module.exports = {
 	 * Inline keyboard to be added to reply to /groups.
 	 * We use it to display button opening our webpage.
 	 */
-	groupsInlineKeyboard: process.env.BOT_GROUPSINLINEKEYBOARD,
+	groupsInlineKeyboard: [],
 
 	numberOfWarnsToBan: process.env.BOT_NUMBEROFWARNSTOBAN,
 
@@ -131,7 +131,7 @@ module.exports = {
 	 * Inline keyboard to be added to warn message.
 	 * We use it to display button showing our rules.
 	 */
-	warnInlineKeyboard: process.env.BOT_WARNINLINEKEYBOARD
+	warnInlineKeyboard: []
 };
 
 Object.freeze(module.exports);
