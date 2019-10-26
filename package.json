@@ -1,6 +1,6 @@
 {
   "name": "themagiq_bot",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A Telegram bot to manage network of groups.",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
   "dependencies": {
     "daggy": "^1.3.0",
     "dedent-js": "^1.0.1",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
     "millisecond": "^0.1.2",
     "nedb-promise": "^2.0.1",
@@ -41,7 +42,7 @@
     "xregexp": "^4.2.0"
   },
   "engines": {
-    "node": ">=8.1.3"
+    "node": ">=12.12.0"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
