@@ -1,0 +1,19 @@
+# docker-compose.yml
+version: '3'
+services:
+  themagiq_bot_server:
+    image: stephdgenius/themagiq_bot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile_themagiq_bot
+    restart: always
+  themagiq_bot_nginx:
+    image: stephdgenius/themagiq_bot_nginx:latest
+    build:
+      context: .
+      dockerfile: Dockerfile_themagiq_bot_nginx
+    ports:
+      - 8083:8083
+    depends_on:
+      - themagiq_bot_server
+    restart: always

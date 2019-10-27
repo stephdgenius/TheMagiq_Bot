@@ -1,0 +1,13 @@
+docker-compose.yml
+docker-compose-server.yml
+Dockerfile_themagiq_bot
+Dockerfile_themagiq_bot_nginx
+node_modules
+bot-command
+npm-debug.log
+example.config.js
+README.md
+.dockerignore
+.circleci
+.git
+

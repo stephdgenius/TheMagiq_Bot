@@ -7,9 +7,6 @@
     "precommit": "bash scripts/pre-commit.sh",
     "postversion": "git push --atomic --follow-tags origin develop develop:master",
     "start": "node index",
-    "build-docker": "docker build -t themagiq_bot .",
-    "create-docker-network": "docker network create --attachable bot_instance",
-    "start-docker": "docker run --name themagiq_bot --rm -itd --network=bot_instance -p 127.0.0.1:3000:3000 themagiq_bot",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -14,9 +14,10 @@ const bot = require('./bot');
 var express = require('express');
 var app = express();
 
-// set the port of our application
-// process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 3000;
+// set the host and port of our application
+// Constants
+const PORT = 3000;
+const HOST = '0.0.0.0';
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -30,7 +31,7 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
-app.listen(port);
+app.listen(PORT, HOST);
 
 // Launch Bot
 bot.telegram
