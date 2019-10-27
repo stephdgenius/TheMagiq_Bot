@@ -11,23 +11,18 @@ const { logError } = require('./utils/log');
  */
 const bot = require('./bot');
 
-// Import Express JS
-const express = require('express');
-const app = express();
-const { join } = require('path');
+var express = require('express');
+var app = express();
 
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
-const port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
-app.set('views', join(__dirname, './views'));
-app.engine('.ejs', require('ejs').__express);
-
 // make express look in the public directory for assets (css/js/img)
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // set the home page route
 app.get('/', (req, res) => {
