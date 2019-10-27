@@ -28,7 +28,7 @@ const addCommandHandler = async (ctx) => {
 	if (!isValidName) {
 		return reply(
 			'<b>Send a valid command.</b>\n\nExample:\n' +
-			'<code>/addcommand rules</code>',
+			'<code>/addcommand !rules</code>',
 			replyOptions
 		);
 	}

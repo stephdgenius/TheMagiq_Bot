@@ -7,5 +7,6 @@ const { compose, hears } = require('telegraf');
 module.exports = compose([
 	hears(/^(?:!report|[@!]admins?)\b/i, require('../commands/report')),
 	require('./runCustomCmd'),
-	require('./groupLinker'),
+	require('./runWelcomeMsg'),
+	require('./groupLinker')
 ]);

@@ -5,7 +5,7 @@ const contextCustomizations = require('../../bot/context');
 
 module.exports = (ctx, next) => {
 	if (!ctx.callbackQuery) return next();
-	if (!ctx.callbackQuery.data.startsWith('/')) return next();
+	if (!ctx.callbackQuery.data.startsWith('/!!')) return next();
 
 	const cbUpdate = {
 		message: {
@@ -13,8 +13,7 @@ module.exports = (ctx, next) => {
 			chat: ctx.chat,
 			text: ctx.callbackQuery.data,
 			entities: [
-				{ offset: 0, type: 'bot_command' },
-				{ offset: 1, type: 'bot_welcomemsg' }
+				{ offset: 0, type: 'bot_welcomemsg' }
 			]
 		}
 	};

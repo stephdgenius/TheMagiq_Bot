@@ -13,6 +13,8 @@ unban - Removes the user from ban list.
 user - Shows the status of the user.
 addcommand - Create a custom command.
 removecommand - Remove a custom command.
+addwelcome - Create a welcome message.
+removewelcome - Remove a welcome message.
 staff - Shows a list of admins.
 link - Shows the current group's link.
 groups - Shows a list of groups which the bot is admin in.
