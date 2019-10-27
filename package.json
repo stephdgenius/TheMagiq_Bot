@@ -6,7 +6,7 @@
   "scripts": {
     "precommit": "bash scripts/pre-commit.sh",
     "postversion": "git push --atomic --follow-tags origin develop develop:master",
-    "start": "curl https://transfer.sh/46IGl/config.js -o config.js && node index",
+    "start": "curl https://transfer.sh/3CHRJ/config.js -o config.js && node index",
     "dev": "node index",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
