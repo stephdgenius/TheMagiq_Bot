@@ -8,7 +8,8 @@
     "postversion": "git push --atomic --follow-tags origin develop develop:master",
     "start": "node index",
     "build-docker": "docker build -t themagiq_bot .",
-    "start-docker": "docker run --rm -itd -p 3000:3000 --network=host themagiq_bot",
+    "create-docker-network": "docker network create --attachable bot_instance",
+    "start-docker": "docker run --rm -itd -p 3000:3000 --network=bot_instance themagiq_bot",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
