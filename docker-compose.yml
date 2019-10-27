@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_themagiq_bot
+    ports:
+      - 3000:3000
     restart: always
   themagiq_bot_nginx:
     image: stephdgenius/themagiq_bot_nginx:latest
