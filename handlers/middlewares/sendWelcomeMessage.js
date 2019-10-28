@@ -45,6 +45,7 @@ const sendWelcomeMessageHandler = async (ctx, next) => {
 			break;
 
 		default:
+			ctx.telegram.sendMessage(user.id, welcome_en.content);
 			break;
 		}
 	}
