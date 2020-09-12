@@ -34,7 +34,7 @@
     "express": "^4.17.1",
     "millisecond": "^0.1.2",
     "nedb-promise": "^2.0.1",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.1",
     "ramda": "^0.25.0",
     "require-directory": "^2.1.1",
     "telegraf": "^3.25.0",
